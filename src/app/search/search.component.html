@@ -1,0 +1,23 @@
+<div class="search-container">
+  <button routerLink="/" class="home-button">Home</button>
+  <h1>What to Cook</h1>
+  <p>Enter the ingredients you have to find a recipe (leave fields blank if not applicable):</p>
+  <form (ngSubmit)="searchRecipes()">
+    <label>Main Carbohydrate</label>
+    <input type="text" [(ngModel)]="ingredients.carbonhydrate" name="carbohydrate" placeholder="e.g., rice, pasta" />
+
+    <label>Proteins</label>
+    <input type="text" [(ngModel)]="ingredients.protein" name="protein" placeholder="e.g., chicken, tofu" />
+
+    <label>Vegetables</label>
+    <input type="text" [(ngModel)]="ingredients.vegetables" name="vegetables" placeholder="e.g., spinach, carrots" />
+
+    <label>Spices and Herbs</label>
+    <input type="text" [(ngModel)]="ingredients.spices" name="spices" placeholder="e.g., basil, garlic" />
+
+    <label>Additional Ingredients</label>
+    <input type="text" [(ngModel)]="ingredients.others" name="others" placeholder="e.g., butter, cheese" />
+
+    <button type="submit">Find Recipes</button>
+  </form>
+</div>
