@@ -1,0 +1,18 @@
+<div class = "home-container">
+  <header>
+    <h1>PantryPal</h1>
+    <button routerLink="/search" class="start-cooking">Start Cooking</button>
+    <input type = "text" placeholder="Search by ingredient"/>
+  </header>
+
+  <main>
+    <h2>Helping you cook with what you've got</h2>
+    <div class="recipe-of-the-day">
+      <h3>RECIPE OF THE DAY</h3>
+      <h4>{{ recipeOfTheDay.title }}</h4>
+      <p>{{ recipeOfTheDay.description }}</p>
+      <img [src]="recipeOfTheDay.image" alt="{{ recipeOfTheDay.title }}" />
+      <button (click)="navigateToRecipe()">Try it now!</button>
+    </div>
+  </main>
+</div>

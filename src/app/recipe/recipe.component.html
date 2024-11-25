@@ -1,0 +1,9 @@
+<div class="recipe-container" *ngIf="recipe">
+  <button routerLink="/" class="home-button">Home</button>
+  <h1>{{ recipe.title }}</h1>
+  <p>{{ recipe.description }}</p>
+  <h2>Instructions</h2>
+  <ul>
+    <li *ngFor="let step of recipe.instructions">{{ step }}</li>
+  </ul>
+</div>

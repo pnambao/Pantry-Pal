@@ -1,0 +1,12 @@
+<div class="results-container">
+  <button routerLink="/" class="home-button">Home</button>
+  <h1>Dishes You Can Cook</h1>
+  <div class="recipe-list">
+    <div class="recipe-card" *ngFor="let recipe of recipes">
+      <img [src]="recipe.image" [alt]="recipe.title" />
+      <h3>{{ recipe.title }}</h3>
+      <p>{{ recipe.description }}</p>
+      <button routerLink="/recipe/{{ recipe.id }}">View Recipe</button>
+    </div>
+  </div>
+</div>
