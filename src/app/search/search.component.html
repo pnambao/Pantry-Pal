@@ -1,0 +1,39 @@
+<button routerLink="/home" class="home-button">back</button>
+<div id="card">
+    <h1>WHAT TO COOK</h1>
+    <p id="instructions">Enter some ingredients to find a recipe</p>
+  
+    <div id="searchArea">
+      <!-- Use a form to manage the input and validation -->
+      <form #recipeForm="ngForm" (ngSubmit)="fetchRecipes(recipeForm)">
+        <input
+          type="text"
+          [(ngModel)]="ingredients"
+          name="ingredients"
+          #ingredientsField="ngModel" 
+          placeholder="Enter ingredients (e.g., chicken, rice)"
+          required
+        />
+        
+        <!-- Validation message -->
+        <div *ngIf="ingredientsField.invalid && ingredientsField.touched" class="error">
+          Please enter some ingredients!
+        </div>
+        <br>
+        <button type="submit" [disabled]="recipeForm.invalid">Find Recipes</button>
+      </form>
+    </div>
+  
+    <div *ngIf="recipes$ | async as recipes" class="results-container">
+      <div *ngFor="let recipe of recipes.hits" class="recipe-card">
+        <h2>{{ recipe.recipe.label }}</h2>
+        <img [src]="recipe.recipe.image" alt="{{ recipe.recipe.label }}" />
+        <p>Ingredients:</p>
+        <ul>
+          <li *ngFor="let ingredient of recipe.recipe.ingredientLines">{{ ingredient }}</li>
+        </ul>
+        <a [href]="recipe.recipe.url" target="_blank">View Full Recipe</a>
+      </div>
+    </div>
+  </div>
+  

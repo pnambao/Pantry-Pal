@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mrs+Saint+Delafield&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$orange: #e05858;
+$green: #59a285;
+$white: #ffffff;
+$navy: #0b257e;
+$footer-color: #122620;
+$title-font: "Lora", serif;
+$body-font: "Poppins", sans-serif;
+
+nav {
+    display: flex; // Makes the nav items align in a row
+    justify-content:center; // Pushes items to the right (or use `center` or `space-between` as needed)
+    align-items: center; // Ensures vertical alignment
+    gap: 1rem; // Adds spacing between items
+    list-style: none; // Removes bullet points for `<ul>` if you're using one
+    background-color: $footer-color;
+    
+  }
+  
+  nav a {
+    text-decoration: none; // Removes underlines from links
+    color: $white; // Matches the header/footer text color
+    font-family: $body-font; // Matches your font style
+    font-size: 1rem; // Adjust size as needed
+    transition: color 0.3s; // Adds a hover effect
+  
+    &:hover {
+      color: $orange; // Example hover color
+    }
+  }
+
+  h1{
+    font-family: $title-font;
+    color: white;
+  }
+
+  #byStudents{
+    font-family: $body-font;
+    color: white;
+  }
+
+  p{
+    color: white;
+  }
+
+  img {
+    width: 50px; // Fixed width for images
+  }
+
+ 

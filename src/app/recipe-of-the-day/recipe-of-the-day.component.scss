@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mrs+Saint+Delafield&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$orange: #e05858;
+$green: #59a285;
+$white: #ffffff;
+$navy: #0b257e;
+$footer-color: #122620;
+$title-font: "Lora", serif;
+$body-font: "Poppins", sans-serif;
+
+button {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: $navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: $body-font;
+
+    &:hover {
+      background-color: $green;
+    }
+  }
+  
+.recipe-container {
+    min-height: 100vh;
+    padding: 20px;
+    margin-left: 400px;
+    margin-right:400px
+  
+    
+  
+    
+  }
+
+  
+  h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: $title-font;
+    color: $navy;
+  }
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: $body-font;
+  width: 350px; /* Adjust width as needed */
+  padding: 5px; /* Space between content and edge */
+  margin-bottom: 5px; /* Spacing between cards */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: $title-font;
+  color: $orange;
+}
+
+ul {
+
+  padding: 5;
+  
+
+  li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: $body-font;
+    width: 350px;
+  }
+}
+img{
+    width: 400px; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: solid $navy;
+    
+}

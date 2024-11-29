@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mrs+Saint+Delafield&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$orange: #e05858;
+$green: #59a285;
+$white: #ffffff;
+$navy: #0b257e;
+$footer-color: #353935;
+$title-font: "Lora", serif;
+$body-font: "Poppins", sans-serif;
+
+.home-container {
+   min-height: 100vh; 
+    display: flex;
+    flex-direction:column;
+    //align-items: center;
+    //justify-content: center; 
+    //text-align: center;
+   padding: 20px; 
+   margin-bottom: 20px;
+  }
+  body {
+    background-image: url('/images/theme.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0; 
+    height: 100vh; 
+    color: #fff; 
+
+    #moto{
+        font-family: $body-font;
+        text-shadow: 15px 3px 10px black;
+    }
+   
+  }
+  
+  main {
+
+    width: 350px; /* Adjust width as needed */
+    height: 350px; /* Adjust height as needed */
+   // border: 1px solid #ccc; /* Simple border */
+    padding: 5px; /* Space between content and edge */
+    margin-bottom: 5px; /* Spacing between cards */
+    //max-width: 700px;
+    //max-height: 500px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    
+
+    h1 {
+        
+        display: flex;
+        text-align: left;
+        font-family: $body-font;
+        font-size:large;
+        margin: 0;
+    }
+
+    
+
+  
+    .recipe-of-the-day {
+      text-align: center;
+      align-items: flex-start;
+
+      
+  
+      h3 {
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        padding: 2px;
+        font-family: $body-font;
+        background-color: #59a285;
+      }
+  
+      h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-family: $body-font;
+      }
+  
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-family: $body-font;
+      }
+  
+      img {
+        width: 200px; 
+        height: auto; 
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+  
+      button {
+        background-color: $navy;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: $body-font;
+  
+        &:hover {
+          background-color: $green;
+        }
+      }
+    }
+  }
+  

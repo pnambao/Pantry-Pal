@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mrs+Saint+Delafield&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
+
+
+$orange: #e05858;
+$green: #59a285;
+$white: #ffffff;
+$navy: #0b257e;
+$footer-color: #353935;
+$title-font: "Lora", serif;
+$body-font: "Poppins", sans-serif;
+
+nav {
+    display: flex; // Makes the nav items align in a row
+    justify-content: flex-start; // Pushes items to the right (or use `center` or `space-between` as needed)
+    align-items: center; // Ensures vertical alignment
+    gap: 1rem; // Adds spacing between items
+    list-style: none; // Removes bullet points for `<ul>` if you're using one
+    border-bottom: solid 20px $orange;
+    border-top: solid $orange;
+  }
+  
+  nav a {
+    text-decoration: none; // Removes underlines from links
+    color: $white; // Matches the header/footer text color
+    font-family: $body-font; // Matches your font style
+    font-size: 1rem; // Adjust size as needed
+    transition: color 0.3s; // Adds a hover effect
+  
+    &:hover {
+      color: $orange; // Example hover color
+    }
+  }
+
+  button{
+    padding: 5px;
+    font-family: $body-font;
+    font-size: 14px;
+    color: $white;
+    background-color: $navy;
+    border-radius: 5px;
+    border: none;
+    &:hover{
+      background-color: $green;
+      cursor: pointer;
+
+    }
+  }
+
+  input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
+
+input[type="search"] {
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: $body-font;
+  width: 300px ;
+ 
+
+}
+
+  h1{
+    font-family: $title-font;
+    color: navy;
+  }
+
+  p{
+    font-family: $body-font;
+  }
+
+  img {
+    width: 70px; // Fixed width for images
+  }

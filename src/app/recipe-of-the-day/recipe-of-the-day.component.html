@@ -1,0 +1,11 @@
+<button routerLink="/home" class="home-button">back</button>
+<div class="recipe-container" *ngIf="salad">
+    <h1>{{ salad.title }}</h1>
+    <img src="/images/caprese-salad.jpg" alt="caprese salad">
+    <h2>Ingredients</h2>
+    <p>{{ salad.ingredients }}</p>
+    <h2>Instructions</h2>
+    <ul>
+      <li *ngFor="let step of salad.instructions">{{ step }}</li>
+    </ul>
+  </div>
